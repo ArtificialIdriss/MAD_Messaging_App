@@ -1,5 +1,5 @@
-import 'package:messaging_app/screens/home_screen.dart';
-import 'package:messaging_app/screens/sign_in_screen.dart';
+import 'package:mad_artfolio_app/screens/home_screen.dart';
+import 'package:mad_artfolio_app/screens/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

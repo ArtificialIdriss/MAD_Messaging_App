@@ -38,51 +38,51 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions are not supported for this platform.',
         );
     }
-  } //for git
+  }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAKU3AJWDh5SHSyF6BRgs26wplHejAm2y0',
-    appId: '1:183947127883:web:ba81717101aae9b505b1ce',
-    messagingSenderId: '183947127883',
-    projectId: 'messagingapp-45514',
-    authDomain: 'messagingapp-45514.firebaseapp.com',
-    storageBucket: 'messagingapp-45514.appspot.com',
-    measurementId: 'G-Z0BR6EMDZ6',
+    apiKey: 'AIzaSyCCexgKmdAzK4g6zBx3qhwbhxCg8nyVyUg',
+    appId: '1:463988413810:web:b7af76ebc8472b1f30b9eb',
+    messagingSenderId: '463988413810',
+    projectId: 'madartfolioapp',
+    authDomain: 'madartfolioapp.firebaseapp.com',
+    storageBucket: 'madartfolioapp.appspot.com',
+    measurementId: 'G-JNBL3BCRZY',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAyx_rvCQHNuBM0TLyvgS_A0Yu3vguCBJk',
-    appId: '1:183947127883:android:7e60ae53968539eb05b1ce',
-    messagingSenderId: '183947127883',
-    projectId: 'messagingapp-45514',
-    storageBucket: 'messagingapp-45514.appspot.com',
+    apiKey: 'AIzaSyApVIVvSJEDe-61qDF5rbTC5bwx-NHtPSg',
+    appId: '1:463988413810:android:4bf958ff353b915830b9eb',
+    messagingSenderId: '463988413810',
+    projectId: 'madartfolioapp',
+    storageBucket: 'madartfolioapp.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBOxk346cGKxGqQRQDBES6Az9UBwR8tU_A',
-    appId: '1:183947127883:ios:edbf2bfa08a6282005b1ce',
-    messagingSenderId: '183947127883',
-    projectId: 'messagingapp-45514',
-    storageBucket: 'messagingapp-45514.appspot.com',
+    apiKey: 'AIzaSyD8oBI-Xlu55PMftjOeg7JqMyyriCNPwT4',
+    appId: '1:463988413810:ios:8dab82fd91c332ec30b9eb',
+    messagingSenderId: '463988413810',
+    projectId: 'madartfolioapp',
+    storageBucket: 'madartfolioapp.appspot.com',
     iosBundleId: 'com.example.messagingApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBOxk346cGKxGqQRQDBES6Az9UBwR8tU_A',
-    appId: '1:183947127883:ios:edbf2bfa08a6282005b1ce',
-    messagingSenderId: '183947127883',
-    projectId: 'messagingapp-45514',
-    storageBucket: 'messagingapp-45514.appspot.com',
+    apiKey: 'AIzaSyD8oBI-Xlu55PMftjOeg7JqMyyriCNPwT4',
+    appId: '1:463988413810:ios:8dab82fd91c332ec30b9eb',
+    messagingSenderId: '463988413810',
+    projectId: 'madartfolioapp',
+    storageBucket: 'madartfolioapp.appspot.com',
     iosBundleId: 'com.example.messagingApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyAKU3AJWDh5SHSyF6BRgs26wplHejAm2y0',
-    appId: '1:183947127883:web:529481bc7a736f9805b1ce',
-    messagingSenderId: '183947127883',
-    projectId: 'messagingapp-45514',
-    authDomain: 'messagingapp-45514.firebaseapp.com',
-    storageBucket: 'messagingapp-45514.appspot.com',
-    measurementId: 'G-K3145BPMTC',
+    apiKey: 'AIzaSyCCexgKmdAzK4g6zBx3qhwbhxCg8nyVyUg',
+    appId: '1:463988413810:web:9e592a20c178a83a30b9eb',
+    messagingSenderId: '463988413810',
+    projectId: 'madartfolioapp',
+    authDomain: 'madartfolioapp.firebaseapp.com',
+    storageBucket: 'madartfolioapp.appspot.com',
+    measurementId: 'G-L3MHZHR6R4',
   );
 }

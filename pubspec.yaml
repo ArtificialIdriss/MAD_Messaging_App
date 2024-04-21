@@ -1,4 +1,4 @@
-name: messaging_app
+name: mad_artfolio_app
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -35,10 +35,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
-  firebase_core: ^2.29.0
-  firebase_auth: ^4.19.1
-  cloud_firestore: ^4.16.1
-  firebase_messaging: ^14.8.1
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.19.2
+  cloud_firestore: ^4.17.0
 
 dev_dependencies:
   flutter_test:

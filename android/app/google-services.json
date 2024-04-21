@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "183947127883",
-    "project_id": "messagingapp-45514",
-    "storage_bucket": "messagingapp-45514.appspot.com"
+    "project_number": "463988413810",
+    "project_id": "madartfolioapp",
+    "storage_bucket": "madartfolioapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:183947127883:android:7e60ae53968539eb05b1ce",
+        "mobilesdk_app_id": "1:463988413810:android:4bf958ff353b915830b9eb",
         "android_client_info": {
           "package_name": "com.example.messaging_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAyx_rvCQHNuBM0TLyvgS_A0Yu3vguCBJk"
+          "current_key": "AIzaSyApVIVvSJEDe-61qDF5rbTC5bwx-NHtPSg"
         }
       ],
       "services": {

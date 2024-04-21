@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:messaging_app/auth/auth_page.dart';
-import 'package:messaging_app/screens/chat_screen.dart';
+import 'package:mad_artfolio_app/auth/auth_page.dart';
+import 'package:mad_artfolio_app/screens/user_screen.dart';
 
 // Define _auth as an instance of FirebaseAuth
 final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -64,7 +64,7 @@ class HomeScreen extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => ChatPage(
+                builder: (context) => UserPage(
                   receiverUserEmail: data['email'],
                   receiverUserID: data['uid'],
                 ),

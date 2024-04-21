@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:messaging_app/components/my_textfield.dart';
+import 'package:mad_artfolio_app/components/my_textfield.dart';
 import 'sign_in_screen.dart';
-import 'package:messaging_app/auth/auth_page.dart';
+import 'package:mad_artfolio_app/auth/auth_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class SignUpScreen extends StatefulWidget {

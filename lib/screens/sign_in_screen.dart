@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:messaging_app/screens/sign_up_screen.dart';
-import 'package:messaging_app/components/my_textfield.dart';
+import 'package:mad_artfolio_app/screens/sign_up_screen.dart';
+import 'package:mad_artfolio_app/components/my_textfield.dart';
 
 class SignInScreen extends StatefulWidget {
   SignInScreen({Key? key}) : super(key: key);
