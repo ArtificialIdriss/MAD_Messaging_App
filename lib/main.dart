@@ -16,6 +16,7 @@ class messagingApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
+      //start at auth page for auto sign in
       home: AuthPage(),
     );
   }

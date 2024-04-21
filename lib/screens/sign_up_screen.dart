@@ -68,7 +68,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text('Error'),
+          title: Text('Error:'),
           content: Text(message),
           actions: <Widget>[
             TextButton(

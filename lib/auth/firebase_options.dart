@@ -38,7 +38,7 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions are not supported for this platform.',
         );
     }
-  }
+  } //for git
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyAKU3AJWDh5SHSyF6BRgs26wplHejAm2y0',

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// make textboxes easier to create
 class MyTextField extends StatelessWidget {
   final controller;
   final String hintText;
