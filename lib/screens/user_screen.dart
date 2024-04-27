@@ -9,12 +9,12 @@ class UserPage extends StatelessWidget {
     required this.receiverUserEmail,
     required this.receiverUserID,
   });
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('User Details'),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
