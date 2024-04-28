@@ -167,12 +167,22 @@ class UserPage extends StatelessWidget {
     return StreamBuilder(
       stream: FirebaseFirestore.instance
           .collection('posts')
-          .where('userId', isEqualTo: receiverUserID)
           .orderBy('timestamp', descending: true)
           .snapshots(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List<DocumentSnapshot> userPosts = snapshot.data!.docs;
+          List<DocumentSnapshot> allPosts = snapshot.data!.docs;
+          List<DocumentSnapshot> userPosts = [];
+
+          // Filter posts to include only the user's own uploads
+          for (var post in allPosts) {
+            Map<String, dynamic>? postData =
+                post.data() as Map<String, dynamic>?;
+
+            if (postData != null && postData['userId'] == receiverUserID) {
+              userPosts.add(post);
+            }
+          }
 
           if (userPosts.isEmpty) {
             return Center(
