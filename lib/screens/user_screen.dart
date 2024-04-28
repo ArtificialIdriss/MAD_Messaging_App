@@ -44,16 +44,19 @@ class UserPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16.0),
           ),
+          Expanded(
+            child: _buildUserPostsList(context),
+          ),
         ],
       ),
     );
   }
 
   Widget UserProfileWidget({
+    required BuildContext context,
     required String userEmail,
     required String profilePictureUrl,
-    required String bio, // Add bio parameter
-    required BuildContext context,
+    required String bio,
   }) {
     return Stack(
       children: [
@@ -157,6 +160,72 @@ class UserPage extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+
+  Widget _buildUserPostsList(BuildContext context) {
+    return StreamBuilder(
+      stream: FirebaseFirestore.instance
+          .collection('posts')
+          .where('userId', isEqualTo: receiverUserID)
+          .orderBy('timestamp', descending: true)
+          .snapshots(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          List<DocumentSnapshot> userPosts = snapshot.data!.docs;
+
+          if (userPosts.isEmpty) {
+            return Center(
+              child: Text('No posts yet.'),
+            );
+          }
+
+          return ListView.builder(
+            itemCount: userPosts.length,
+            itemBuilder: (context, index) {
+              Map<String, dynamic> postData =
+                  userPosts[index].data() as Map<String, dynamic>;
+
+              return _buildUserPostItem(context, postData);
+            },
+          );
+        } else {
+          return Text('Error loading image.');
+        }
+      },
+    );
+  }
+
+  Widget _buildUserPostItem(
+      BuildContext context, Map<String, dynamic> postData) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Display the image
+          postData.containsKey('imageUrl') && postData['imageUrl'] != null
+              ? Image.network(
+                  postData['imageUrl'],
+                  width: MediaQuery.of(context).size.width,
+                  fit: BoxFit.cover,
+                )
+              : SizedBox(), // If imageUrl is null or not available, display nothing
+          SizedBox(height: 8),
+          // Display the description
+          Text(
+            postData['description'] ?? '',
+            style: TextStyle(fontSize: 16),
+          ),
+          SizedBox(height: 8),
+          // Display the timestamp (if needed)
+          Text(
+            '${postData['timestamp']}',
+            style: TextStyle(fontSize: 12, color: Colors.grey),
+          ),
+          Divider(), // Add a divider between posts
+        ],
+      ),
     );
   }
 }
